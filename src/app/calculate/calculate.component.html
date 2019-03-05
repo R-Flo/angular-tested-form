@@ -1,0 +1,27 @@
+<div class="container">
+    <h1>Calculation Form</h1>
+
+        <div class="form-group">
+          <label for="number1">Input 1</label>
+          <input type="text"
+                 class="form-control"
+                 name="number1"
+                 id="number1"
+                 [(ngModel)]="model.number1" />
+        </div>
+
+        <div class="form-group">
+          <label for="number2">Input 2</label>
+          <input type="text"
+                 class="form-control"
+                 name="number2"
+                 id="number2"
+                 [(ngModel)]="model.number2" />
+        </div>
+
+
+      <button type="button" class="btn btn-default" (click)="clickCalcButton()">Calc</button>
+
+  <div id="result">{{result}}</div>
+
+</div>
